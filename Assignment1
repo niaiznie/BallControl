@@ -12,7 +12,7 @@ void draw() {
   
   float a = mouseX;
   float b = mouseY;
-  float ia = width - mouseX; //
+  float ia = width - mouseX;
   float ib = height - mouseY;
   
   fill(255, 85, 85);
