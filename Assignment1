@@ -30,4 +30,15 @@ void draw() {
   
   fill(0, 159);
   ellipse(x, y, 66, 66);
+  
+ if ((mouseX <= 320) && (mouseY <= 180)) {
+    rect(0, 0, 320, 180); // Upper-left
+  } else if ((mouseX <= 320) && (mouseY > 50)) {
+    rect(0, 180, 320, 360); // Lower-left
+  } else if ((mouseX > 50) && (mouseY <= 180)) {
+    rect(320,0, 640, 180); // Upper-right
+  } else {
+    rect(320, 180, 640, 360); // Lower-right
+  }
+ 
 }
